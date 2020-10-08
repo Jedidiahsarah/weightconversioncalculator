@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight COnverter</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container-fluid p-0 bg-info vh-100 d-flex position-absolute ">
+        
+        <div class="bg-white w-75 h-75 m-auto content">
+            <h2 class="text-center mt-5">Weight Conversion Calculator</h2>
+            <div class="row m-lg-4  rows">
+                <div class="col-lg-6 col-sm-12 mt-lg-3 mt-md-0">
+
+                    <label for="massFrom">From</label>
+                    <select name="massFrom" id="massFrom" class="form-control">
+                        <option ></option>
+                        <option value="g">Grams (g)</option>
+                        <option value="kg">Kilograms (kg)</option>
+                        <option value="t">Tonnes (t)</option>
+                    </select>
+                    
+                </div>
+                <div class="col-lg-6 col-sm-12 mt-3">
+
+                    <label for="massTo">To</label>
+                    <select name="massTo" id="massTo" class="form-control">
+                        <option ></option>
+                        <option value="g">Grams (g)</option>
+                        <option value="kg">Kilograms (kg)</option>
+                        <option value="t">Tonnes (t)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row m-lg-4  rows mt-3">
+                <div class="col-12 col-sm-12">
+                    <label for="inputed">Number to be converted</label>
+                    <input type="number" class="form-control" id="inputed">
+                    <button class="btn btn-info btn-block mt-4" id="btn">Convert</button>
+                </div>
+                <div class="col-12 col-sm-12 mt-4 ">
+                    
+                    <div class="bg-dark form-control text-white text-center " id="result" ></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
